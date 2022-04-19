@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NextTry
+namespace Fragments_back_end
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {

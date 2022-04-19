@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "avN9Wpl0xgEgohQofhg+AkYEFF/pMPbv0+iq2hI4fikmLBbn0pd3K3S/E19pABh4cc8lm0anGiRI8CJ+H/wV5A==",
+  "dgSpecHash": "MUg49BFJU458Yl8JFq6gNw25y3IT8PMGuHMxVeC5/brrGfiYHlKNYehJq6PMxWnvH3T52nFghlDuprfmGomIRQ==",
   "success": true,
-  "projectFilePath": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\ReposTrain\\ThirdTime1\\ThirdTime1\\ThirdTime1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nazar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
