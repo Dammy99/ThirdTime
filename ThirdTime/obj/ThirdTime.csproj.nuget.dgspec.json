@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {}
+    "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {}
   },
   "projects": {
-    "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {
+    "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
+        "projectUniqueName": "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
         "projectName": "ThirdTime",
-        "projectPath": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
+        "projectPath": "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
         "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\obj\\",
+        "outputPath": "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -49,6 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.15, 5.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
