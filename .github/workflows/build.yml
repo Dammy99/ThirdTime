@@ -4,6 +4,10 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      
 jobs:
   build:
     name: Build
@@ -40,15 +44,31 @@ jobs:
         run: |
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-      - name: Build and analyze
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        shell: powershell
-        run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Dammy99_ThirdTime" /o:"dammy99" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
-          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+      - name: Build
+        run: dotnet build --configuration Release
+        working-directory: ThirdTime/ThirdTime
+      
+  sonarscan:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+     #SonarScan
+    - name: SonarScanner for .NET Core with pull request decoration support
+      uses: highbyte/sonarscan-dotnet@2.0
+      #uncoment the line above and comment the line below when NuGet will fix their issues   
+      #uses: SplinterRAT/sonarscan-dotnet@v2.0.0.1
+      with:
+        # The key of the SonarQube project
+        sonarProjectKey: Dammy99_ThirdTime
+        # The name of the SonarQube project
+        sonarProjectName:  ThirdTime
+        # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
+        sonarOrganization: Dammy99
+        dotnetBuildArguments: ThirdTime/ThirdTime.sln -c Debug ThirdTime/ThirdTime.sln
+
   test:
     needs: [build]
     runs-on: ubuntu-latest
