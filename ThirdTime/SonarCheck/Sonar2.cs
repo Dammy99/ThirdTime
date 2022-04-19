@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sonar2
 {
-    class Program
+    public class Customer
     {
-        static void Main(string[] args)
-        {
-        System.Console.WriteLine("Hello World!");
-        }
+        private int YES = 0;
     }
 }
