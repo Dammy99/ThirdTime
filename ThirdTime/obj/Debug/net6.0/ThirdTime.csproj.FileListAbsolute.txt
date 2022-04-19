@@ -1,0 +1,5 @@
+D:\Repos\ThirdTime\ThirdTime\obj\Debug\net6.0\ThirdTime.csproj.AssemblyReference.cache
+D:\Repos\ThirdTime\ThirdTime\obj\Debug\net6.0\ThirdTime.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\ThirdTime\ThirdTime\obj\Debug\net6.0\ThirdTime.AssemblyInfoInputs.cache
+D:\Repos\ThirdTime\ThirdTime\obj\Debug\net6.0\ThirdTime.AssemblyInfo.cs
+D:\Repos\ThirdTime\ThirdTime\obj\Debug\net6.0\ThirdTime.csproj.CoreCompileInputs.cache
