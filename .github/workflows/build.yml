@@ -42,10 +42,8 @@ jobs:
       with:
         fetch-depth: 0
      #SonarScan
-    - name: SonarScanner for .NET Core with pull request decoration support
-      uses: highbyte/sonarscan-dotnet@2.0
-      #uncoment the line above and comment the line below when NuGet will fix their issues   
-      #uses: SplinterRAT/sonarscan-dotnet@v2.0.0.1
+    - name: SonarScanner for .NET 6 with pull request decoration support
+      uses: highbyte/sonarscan-dotnet@v2.1.2
       with:
         # The key of the SonarQube project
         sonarProjectKey: Dammy99_ThirdTime
