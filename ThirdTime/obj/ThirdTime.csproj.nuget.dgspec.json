@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {}
+    "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {}
   },
   "projects": {
-    "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {
+    "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
+        "projectUniqueName": "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
         "projectName": "ThirdTime",
-        "projectPath": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
+        "projectPath": "D:\\Repos\\ThirdTime\\ThirdTime\\ThirdTime.csproj",
         "packagesPath": "C:\\Users\\Nazar\\.nuget\\packages\\",
-        "outputPath": "D:\\ReposTrain\\ThirdTime\\ThirdTime\\ThirdTime\\obj\\",
+        "outputPath": "D:\\Repos\\ThirdTime\\ThirdTime\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
