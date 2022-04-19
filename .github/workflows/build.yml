@@ -52,7 +52,7 @@ jobs:
           dotnet build
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
   test:
-    name: needs [Build]
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Publish Unit Test Results
