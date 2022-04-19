@@ -46,7 +46,7 @@ jobs:
         # The name of the SonarQube project
         sonarProjectName:  ThirdTime
         # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
-        sonarOrganization: Dammy99
+        sonarOrganization: dammy99
         dotnetBuildArguments: ./ThirdTime.sln -c Debug
 
   test:
