@@ -40,7 +40,7 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar-scanner
       - name: Build
         run: dotnet build --configuration Release
-        working-directory: .\ThirdTime\ThirdTime
+        working-directory: ThirdTime\ThirdTime
       
   sonarscan:
     needs: [build]
